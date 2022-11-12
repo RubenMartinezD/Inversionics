@@ -1,0 +1,81 @@
+/*  ----------------PÁGINAS COMUNES-------------------- */
+
+body {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.80857;
+    font-weight: normal;
+    overflow-x: hidden;
+    background-image: url("img/coin.png");
+}
+
+h1 {
+    color: #f2681e;
+}
+
+#indice_lateral_contenidos {
+    text-align: left;
+    grid-column: 1;
+    grid-row: 1;
+    background-color: #f1b493;
+    border-radius: 25px;
+    height: fit-content;
+    padding-left: 0.9em;
+}
+
+#indice_inicio {
+    grid-column: 2 / 3;
+    grid-row: 1;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 0.7fr 2fr;
+    grid-template-rows: auto 1fr;
+    grid-gap: 10px;
+}
+
+footer {
+    text-align: center;
+}
+
+#main_p {
+    text-align: center;
+}
+
+#titulo_noticia {
+    text-align: center;
+}
+
+
+/*  ----------------PÁGINA INICIAL ONLY-------------------- */
+
+#naranjito {
+    color: #f2681e;
+}
+
+#bitcoinero {
+    font-weight: bold;
+}
+
+#disfrute {
+    text-align: center;
+}
+
+#estafita {
+    text-align: center;
+    background-color: #74dea0;
+    border-radius: 25px;
+    height: fit-content;
+    padding-bottom: 1em;
+    padding-top: 0.75em;
+}
+
+#indice_contenidos {
+    text-align: left;
+    background-color: #f1b493;
+    border-radius: 25px;
+    height: fit-content;
+    padding-bottom: 1em;
+    padding-top: 0.75em;
+}
