@@ -13,6 +13,10 @@ h1 {
     color: #f2681e;
 }
 
+h2 {
+    text-align: center;
+}
+
 #indice_lateral_contenidos {
     text-align: left;
     grid-column: 1;
@@ -39,6 +43,7 @@ h1 {
 
 footer {
     text-align: center;
+    color: gray;
 }
 
 #main_p {
@@ -99,4 +104,24 @@ footer {
     height: fit-content;
     padding-bottom: 1em;
     padding-top: 0.75em;
+}
+
+#presentando {
+    text-align: center;
+}
+
+#articulos {
+    padding-left: 40em;
+}
+
+#parrafadita_inicial {
+    padding-left: 20em;
+    padding-right: 20em;
+    font-size: 17px;
+}
+
+#letra_pequeña {
+    font-size: 10px;
+    padding-left: 15em;
+    font-style: oblique;
 }
