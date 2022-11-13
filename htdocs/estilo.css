@@ -1,4 +1,4 @@
-/*  ----------------PÁGINAS COMUNES-------------------- */
+/*  ----------------CSS COMUNES-------------------- */
 
 body {
     font-size: 14px;
@@ -70,7 +70,7 @@ footer {
 
 #parrafadita {
     padding-left: 3em;
-    padding-right: 3em;
+    padding-right: 8em;
 }
 
 
@@ -78,6 +78,10 @@ footer {
 
 #naranjito {
     color: #f2681e;
+}
+
+#azulete {
+    color: blue;
 }
 
 #bitcoinero {
@@ -124,4 +128,75 @@ footer {
     font-size: 10px;
     padding-left: 15em;
     font-style: oblique;
+}
+
+#asterisco_peque {
+    font-size: 12px;
+    color: blue;
+}
+
+#numero_incautos {
+    font-weight: bold;
+}
+
+
+/*  ----------------SIMULADOR ONLY-------------------- */
+
+#peligro {
+    color: #fe0c0c;
+    font-weight: bolder;
+}
+
+
+/*  ----------------ELON MUSK ONLY-------------------- */
+
+.cuerpo_noticia {
+    display: grid;
+    grid-template-columns: 1.8fr 0.9fr;
+    grid-template-rows: auto 1fr;
+    grid-gap: 10px;
+}
+
+#foto {
+    padding-top: 8em;
+}
+
+
+/*  ----------------GURUS ONLY-------------------- */
+
+.cuerpo_noticia2 {
+    display: grid;
+    grid-template-columns: 0.7fr 1.8fr;
+    grid-template-rows: auto 1fr;
+    grid-gap: 10px;
+}
+
+#foto_bezos {
+    padding-left: 3em;
+}
+
+#parrafadita2 {
+    padding-left: 3em;
+    padding-right: 8em;
+    padding-top: 3em;
+}
+
+
+/*  ----------------SITIOS ONLY-------------------- */
+
+#cursivo {
+    font-style: italic;
+}
+
+.top_lugares {
+    display: grid;
+    grid-template-columns: 0.8fr 4fr;
+    grid-template-rows: auto, 1fr;
+    grid-gap: 10px;
+}
+
+#parrafadita3 {
+    padding-left: 3em;
+    padding-right: 8em;
+    padding-top: 2em;
 }
