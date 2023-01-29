@@ -1,36 +1,29 @@
+<?php
+date_default_timezone_set('UTC');
+session_start();                                    //iniciar sesión
+        $nuser = $_SESSION['nombrepresa'] ?? NULL;  //recoger nombre de usuario. De no existir, evitar errores asignando el valor de sesión como null
+if($nuser == null || $nuser == '')
+ {$bool_sesion = false;}
+else { $bool_sesion = true; }
+?>
 <!DOCTYPE html>
 <html lang="es">
 <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
 
 <head>
     <title>INVERSIONICS - Los mejores métodos para ganar PA$TA</title>
-    <link rel="stylesheet" type="text/css" href="estilo.css" />
+    <link rel="stylesheet" type="text/css" href="/contenido/estilo.css" />
 </head>
 
+<h1 hidden id="var_sesion"><?php if ($bool_sesion){echo $nuser;}; ?></h1>
 
-<body>
+<body onload="reemplazar()" src="/scripts/insertar_indice.js" id="fondo_coin">
     <header>
-        <h1 id="main_p"> <a href="index.html">INVERSIONICS <span style="font-size:25px">&#x1f911;</span></a></h1>
+        <h1 id="main_p"> <a href="/index.html">INVERSIONICS <span style="font-size:25px">&#x1f911;</span></a></h1>
     </header>
     <div class="wrapper">
         <div id="indice_lateral_contenidos">
-            <h1>Disfruta de nuestras exclusivas:</h1>
-            <ul>
-                <li><a href="simulador.php">Simulador de inversiones</a></li>
-                <li><a href="gurus.html">Gurús recomendados con recetas para el éxito </a></li>
-
-                <li><a href="sitios.html"> Mejores $itios para viajar</a></li>
-                <li>
-                    <a href="elon_musk.html">Elon Musk nos cuenta cómo se hizo multimillonario</a>
-                </li>
-                <li>Cómo apostar y ganar SIEMPRE 100% REAL NO FAKE [PRÓXIMAMENTE]</li>
-                <li>Gana un Iphone 14 o una Google Play Card! GRATIS!!!!!11!!1 [PRÓXIMAMENTE]</li>
-                <li>Sistemas piramidales 100% probados [PRÓXIMAMENTE]</li>
-                <li>NFTs que te quitan el aliento pero te llenan la billetera [PRÓXIMAMENTE]</li>
-                <li>Mejores casas de apuestas (y mejores psicólogos para combatir la adicción a la ludopatía)
-                    [PRÓXIMAMENTE]
-                </li>
-            </ul>
+            Cargando...
         </div>
 
         <div id="indice_inicio">
@@ -44,8 +37,7 @@
                 <br>
             </p>
             <form action="#" method="post">
-                <p id="parrafadita">Inserta la cantidad de € a <del>perder</del> apo$tar y la criptomoneda: <input
-                        type="integer" name="dinerico"></input>
+                <p id="parrafadita">Inserta la cantidad de € a <del>perder</del> apo$tar y la criptomoneda: <input type="integer" name="dinerico"></input>
                     <select name="monedicas">
                         <option value="BTC">Bitcoin</option>
                         <option value="DOGE">Dogecoin</option>
@@ -54,7 +46,7 @@
                     <input type="submit" name="submit" />
                 </p>
             </form>
-
+            <script src="/scripts/insertar_indice.js"></script>
             <?php
                     if (isset($_POST['submit'])) {
                        $dinerico = $_POST['dinerico'];
@@ -84,8 +76,8 @@
     </div>
 
     <footer>
-        © 2022 INVERSIONICS S.A. Financed by Rubén Martínez.
-
+        © 2022-23 INVERSIONICS S.A. Financed by Rubén Martínez.
+        <script src="/scripts/insertar_indice.js"></script>
     </footer>
 </body>
 

@@ -1,7 +1,6 @@
 var text_reloj = document.getElementById("text_reloj");
 var cuerpo = document.getElementById('cuerpito');
 cuerpo.addEventListener("mouseover", crearIntervaloReloj);
-
 function activarReloj() {
     var fecha = new Date();
     var segundos = fecha.getSeconds();

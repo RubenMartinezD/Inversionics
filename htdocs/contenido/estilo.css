@@ -6,7 +6,14 @@ body {
     line-height: 1.80857;
     font-weight: normal;
     overflow-x: hidden;
-    background-image: url("img/coin.png");
+}
+
+#fondo_coin {
+    background-image: url("/contenido/img/coin.png");
+}
+
+#nioc_odnof {
+    background-image: url("/contenido/img/coinvert.png");
 }
 
 h1 {
@@ -82,6 +89,15 @@ footer {
 
 #azulete {
     color: blue;
+}
+
+#sorpreverde {
+    color: rgb(25, 163, 78);
+}
+
+#sorpreson {
+    font-weight: bold;
+    text-align: left;
 }
 
 #bitcoinero {
@@ -199,4 +215,28 @@ footer {
     padding-left: 3em;
     padding-right: 8em;
     padding-top: 2em;
+}
+
+
+/*  ----------------INICIO DE SESIÓN------------------- */
+
+#sesion {
+    text-align: center;
+    background-color: #9bf193;
+    border-radius: 25px;
+    height: fit-content;
+    padding-bottom: 1em;
+    padding-top: 0.75em;
+}
+
+
+/*  -----------CAPTURA DE NUEVO INSENSATO------------- */
+
+#novato {
+    text-align: center;
+    background-color: #93cbf1;
+    border-radius: 25px;
+    height: fit-content;
+    padding-bottom: 1em;
+    padding-top: 0.75em;
 }

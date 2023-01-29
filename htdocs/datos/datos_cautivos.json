@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "nick": "don_multimillon",
+        "password": "damecapital",
+        "rol": "admin"
+    },
+    {
+        "id": 2,
+        "nick": "federico_monedero",
+        "password": "amolosbancos",
+        "rol": "presa"
+    },
+    {
+        "id": 3,
+        "nick": "incauto_mindundi",
+        "password": "1234",
+        "rol": "presa"
+    },
+    {
+        "id": 4,
+        "nick": "a",
+        "password": "d",
+        "rol": "presa"
+    },
+    {
+        "id": 5,
+        "nick": "a",
+        "password": "a",
+        "rol": "presa"
+    },
+    {
+        "id": 6,
+        "nick": "a",
+        "password": "v",
+        "rol": "presa"
+    },
+    {
+        "id": 7,
+        "nick": "ftgfgfg",
+        "password": "e",
+        "rol": "presa"
+    },
+    {
+        "id": 8,
+        "nick": "ftgfgfg",
+        "password": "t",
+        "rol": "presa"
+    },
+    {
+        "id": 9,
+        "nick": "cosaasassa",
+        "password": "3",
+        "rol": "presa"
+    },
+    {
+        "id": 10,
+        "nick": "penesil",
+        "password": "wario",
+        "rol": "presa"
+    }
+]
