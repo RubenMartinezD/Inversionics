@@ -20,43 +20,7 @@
     {
         "id": 4,
         "nick": "a",
-        "password": "d",
-        "rol": "presa"
-    },
-    {
-        "id": 5,
-        "nick": "a",
         "password": "a",
-        "rol": "presa"
-    },
-    {
-        "id": 6,
-        "nick": "a",
-        "password": "v",
-        "rol": "presa"
-    },
-    {
-        "id": 7,
-        "nick": "ftgfgfg",
-        "password": "e",
-        "rol": "presa"
-    },
-    {
-        "id": 8,
-        "nick": "ftgfgfg",
-        "password": "t",
-        "rol": "presa"
-    },
-    {
-        "id": 9,
-        "nick": "cosaasassa",
-        "password": "3",
-        "rol": "presa"
-    },
-    {
-        "id": 10,
-        "nick": "penesil",
-        "password": "wario",
         "rol": "presa"
     }
 ]
