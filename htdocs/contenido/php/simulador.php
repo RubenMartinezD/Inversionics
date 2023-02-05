@@ -19,7 +19,7 @@ else { $bool_sesion = true; }
 
 <body onload="reemplazar()" src="/scripts/insertar_indice.js" id="fondo_coin">
     <header>
-        <h1 id="main_p"> <a href="/index.html">INVERSIONICS <span style="font-size:25px">&#x1f911;</span></a></h1>
+        <h1 id="main_p"> <a href="/index.php">INVERSIONICS <span style="font-size:25px">&#x1f911;</span></a></h1>
     </header>
     <div class="wrapper">
         <div id="indice_lateral_contenidos">
@@ -37,7 +37,7 @@ else { $bool_sesion = true; }
                 <br>
             </p>
             <form action="#" method="post">
-                <p id="parrafadita">Inserta la cantidad de € a <del>perder</del> apo$tar y la criptomoneda: <input type="integer" name="dinerico"></input>
+                <p id="parrafadita">Inserta la cantidad de € a <del>perder</del> apo$tar y la criptomoneda: <input type="integer" pattern="^\d+(\.\d+)*$" name="dinerico"></input>
                     <select name="monedicas">
                         <option value="BTC">Bitcoin</option>
                         <option value="DOGE">Dogecoin</option>
@@ -51,7 +51,14 @@ else { $bool_sesion = true; }
                     if (isset($_POST['submit'])) {
                        $dinerico = $_POST['dinerico'];
                        $crypto = $_POST['monedicas'];
-                       if (is_numeric($dinerico)){
+
+                       if (str_contains($dinerico, "<script")||(str_contains($dinerico, "<img")))
+                        {
+                            echo "muy muy mal";
+                            header("Location: \contenido\html\ilegalidad.html");  exit();
+                            }     
+
+                       else if (is_numeric($dinerico)){
                                        if ($crypto == "BTC"){
                                          $moneda = ($dinerico * 0.000062);
                                         } else if ($crypto == "DOGE"){

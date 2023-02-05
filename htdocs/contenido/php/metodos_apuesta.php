@@ -5,6 +5,7 @@ session_start();                                    //iniciar sesión
 if($nuser == null || $nuser == '')
  {$bool_sesion = false;}
 else { $bool_sesion = true; }
+if ($bool_sesion == true) {header("Location: VIP_metodos_apuesta.php"); exit();}  // redirigir a la página VIP de existir la sesión
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -19,7 +20,7 @@ else { $bool_sesion = true; }
 
 <body onload="reemplazar()" src="/scripts/insertar_indice.js" id="fondo_coin">
     <header>
-        <h1 id="main_p"> <a href="/index.html">INVERSIONICS <span style="font-size:25px">&#x1f911;</span></a></h1>
+        <h1 id="main_p"> <a href="/index.php">INVERSIONICS <span style="font-size:25px">&#x1f911;</span></a></h1>
     </header>
     <div class="wrapper">
         <div id="indice_lateral_contenidos">
@@ -33,7 +34,7 @@ else { $bool_sesion = true; }
                     Los mejores métodos de apuestas de la mano de nuestro colaborador Andrés Tete solo están
                     disponibles para miembros de nuestro exclusivo club de socios. <br><a href="/contenido/html/inicio_sesion.html">Inicia
                         sesión </a> y al volver a entrar en
-                    esta página la verdadera forma de la Matrix se desvelará ante ti.
+                    esta página la verdadera forma de la Matrix se desvelará ante ti. </p>
                 <div id="foto">
                     <img src="/contenido/img/andrew_tate_detenido.jpg">
                     <p id="pie_foto"> Andrés Tete, dirigiéndose a su recinto penitenciario de confianza para recibir el

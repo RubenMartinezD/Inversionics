@@ -12,15 +12,12 @@ body {
     background-image: url("/contenido/img/coin.png");
 }
 
-#nioc_odnof {
-    background-image: url("/contenido/img/coinvert.png");
-}
-
 h1 {
     color: #f2681e;
 }
 
-h2 {
+h2,
+h3 {
     text-align: center;
 }
 
@@ -239,4 +236,46 @@ footer {
     height: fit-content;
     padding-bottom: 1em;
     padding-top: 0.75em;
+}
+
+/*  ------------------PREMIUM TETE-------------------- */
+
+#nioc_odnof {
+    background-image: url("/contenido/img/coinvert.jpg");
+}
+
+#dark_main_p {
+    text-align: center;
+    color: white;
+    background-color: #506afc;
+}
+
+#dark_indice_inicio {
+    grid-column: 2 / 3;
+    grid-row: 1;
+    background-color: #545cc4;
+    border-radius: 25px;
+}
+
+#dark_titulo_noticia {
+    text-align: center;
+    background-color: #506afc;
+    color: #93cbf1
+}
+
+#dark_parrafadita {
+    padding-left: 3em;
+    padding-right: 8em;
+    color: white;
+}
+
+#dark_pie_foto {
+    color: white;
+}
+
+/*  ------------------REGALO NO-PREMIUM----------------- */
+
+#comentario {
+    padding-left: 10em;
+    padding-right: 8em;
 }

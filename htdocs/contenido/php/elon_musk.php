@@ -19,7 +19,7 @@ else { $bool_sesion = true; }
 
 <body onload="reemplazar()" src="/scripts/insertar_indice.js" id="fondo_coin">
     <header>
-        <h1 id="main_p"> <a href="/index.html">INVERSIONICS <span style="font-size:25px">&#x1f911;</span></a></h1>
+        <h1 id="main_p"> <a href="/index.php">INVERSIONICS <span style="font-size:25px">&#x1f911;</span></a></h1>
     </header>
     <div class="wrapper">
         <div id="indice_lateral_contenidos">

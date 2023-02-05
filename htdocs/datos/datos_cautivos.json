@@ -22,5 +22,11 @@
         "nick": "a",
         "password": "a",
         "rol": "presa"
+    },
+    {
+        "id": 5,
+        "nick": "h",
+        "password": "h",
+        "rol": "presa"
     }
 ]

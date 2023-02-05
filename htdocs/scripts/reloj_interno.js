@@ -1,5 +1,5 @@
 var text_reloj = document.getElementById("text_reloj");
-var cuerpo = document.getElementById('cuerpito');
+var cuerpo = document.getElementById('fondo_coin');
 cuerpo.addEventListener("mouseover", crearIntervaloReloj);
 function activarReloj() {
     var fecha = new Date();
@@ -15,5 +15,4 @@ function activarReloj() {
 
 function crearIntervaloReloj() {
     intervalo_reloj = setInterval(activarReloj, 1000);
-
 }
